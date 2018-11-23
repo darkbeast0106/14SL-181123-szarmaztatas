@@ -8,10 +8,10 @@ namespace VektorDemo
 {
     class Vektor2D
     {
-        private int x;
-        private int y;
+        protected double x;
+        protected double y;
 
-        public Vektor2D(int x, int y)
+        public Vektor2D(double x, double y)
         {
             this.x = x;
             this.y = y;
@@ -42,7 +42,7 @@ namespace VektorDemo
         {
             return v1.x * v2.x + v1.y * v2.y;
         }
-        public double Hossz()
+        public virtual double Hossz()
         {
             return Math.Sqrt(Math.Pow(this.x, 2) + Math.Pow(this.y, 2));
         }
